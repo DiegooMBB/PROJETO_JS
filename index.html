@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial Projeto</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="/html/login.html">Área Administrativa</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="container">
+        <h1>Bem-vindo a Interface Gráfica de Perguntas.</h1>
+
+    </div>
+
+    <div id="contact" class="footer-container">
+        <h1>Contato</h1>
+        <form id="form-contact" method="post">
+            <div class="form-control">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-control">
+                <label for="message">Descrição:</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/home.js"></script>
+
+</body>
+</html>
